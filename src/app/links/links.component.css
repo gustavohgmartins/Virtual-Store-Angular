@@ -1,0 +1,14 @@
+.links{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    color: white;
+    font-size: 15px;
+    margin-right: 20px;
+}
+app-location{
+    margin-right: 17px;
+}

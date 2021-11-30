@@ -1,0 +1,30 @@
+.searchBar{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    padding-left: 10px;
+
+}
+.searchBar i{
+    font-size: 17px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+input{
+    height: 100%;
+    width: 100%;
+    border:none;
+    background-color: transparent;
+}
+.hr2{
+    width: 1px;
+    height: 60%;
+    margin-right: 10px;
+    background: black;
+}
+input::placeholder{
+    font-size: 15px;
+}

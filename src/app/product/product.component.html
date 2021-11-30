@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <div class="productCard" *ngFor = "let product of products">
+        <div class="productImg">
+            <img [title]="product.name + ' details'" [routerLink]="['/product', product.id]" src="../../assets/{{product.img}}">
+        </div>
+        <div class="productName">
+                <a [title]="product.name + ' details'" [routerLink]="['/product', product.id]">{{product.name | uppercase}}</a><br>
+                <p>{{product.price | currency}}</p>
+        </div>
+        <div class="buttons">
+            <button (click)="share(product.name)">Add to cart</button>
+            <app-product-details [product]="product" (notify)="onNotify(product.name)"></app-product-details>
+        </div>   
+    </div>  
+</div>

@@ -1,0 +1,22 @@
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.location i{
+    color: white;
+    font-size: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+}
+p{
+    margin:0;
+}
+#address{
+    font-weight: 550;
+    font-size: 17px;
+}

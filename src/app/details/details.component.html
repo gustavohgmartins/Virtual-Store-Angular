@@ -1,0 +1,16 @@
+<h2>Product Details</h2>
+
+<div *ngIf = "product">
+    <h3>{{product.name}}</h3>
+    <p>{{product.description}}</p>
+    <h4>Price:&nbsp; {{product.price | currency}}</h4>
+</div>
+<div *ngIf = "bestSeller">
+    <h3>{{bestSeller.name}}</h3>
+    <p>{{bestSeller.description}}</p>
+    <h4>Price:&nbsp; {{bestSeller.price | currency}}</h4>
+    <h4>Discout:&nbsp; {{bestSeller.discount | currency}}</h4>
+    <h4>Total:&nbsp; {{bestSeller.price-bestSeller.discount | currency}}</h4>
+</div>
+
+

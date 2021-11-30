@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+
+.left{
+    display: flex;
+    width:90%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    
+}
+.right i{
+    font-size: 25px;
+    color: white;
+}
+app-search-bar{
+    margin: 0px 15px;
+    width: 35%;
+}
+app-logo{
+    margin-left: 30px;
+}
+
+

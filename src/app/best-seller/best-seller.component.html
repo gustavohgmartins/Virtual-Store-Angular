@@ -1,0 +1,36 @@
+<div class="wrapper">
+    <div class = "productCard" *ngFor = "let product of bestSellers">
+        <div class="container">
+            <div class="productImg">
+                <img [title]="product.name + ' details'" [routerLink]="['/bestSeller', product.id]" src="../../assets/{{product.img}}">
+            </div>
+            <app-hr2></app-hr2>
+            <div class="info">
+                <div class="productName">
+                        <a [title]="product.name + ' details'" [routerLink]="['/bestSeller', product.id]">{{product.name | uppercase}}</a><br>
+                        
+                        <p>{{product.price | currency}}</p>
+                        <div class="discount">
+                            <h3>Discount: &nbsp;&nbsp;</h3>
+                            <p>{{product.discount | currency}}</p>
+                        </div>
+                </div>
+            </div>
+            <app-hr2></app-hr2>
+            <div class="description">
+                <h3>{{product.description}}</h3>
+            </div>
+            
+        </div>
+        <div class="buttons">
+            <div class="total">
+                <h3>Total:&nbsp;&nbsp;</h3>
+                <p>{{product.price-product.discount | currency}}</p>
+            </div>
+            <button><a (click)="share(product.name)">Add to cart</a></button>
+            <app-product-details [product]="product" (notify)="onNotify(product.name)"></app-product-details>   
+        </div>
+        
+        
+    </div>  
+</div>
